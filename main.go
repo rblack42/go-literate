@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/rblack42/go-literate/parser"
@@ -13,4 +14,6 @@ func main() {
 		fmt.Println("Error processing file", res.Err)
 		os.Exit(-1)
 	}
+
+	fmt.Println("go-literate exited normally")
 }

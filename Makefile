@@ -1,5 +1,11 @@
 PROJNAME := $(notdir $(PWD))
 PROJPATH := "github.com/$(GITHUB)/$(PROJNAME)"
 
-all:
+run:
+	go run .
+
+init:
+	go mod init $(GOPATH)
+
+debug:
 	echo $(PROJPATH)
